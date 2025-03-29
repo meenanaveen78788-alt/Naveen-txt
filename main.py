@@ -196,7 +196,7 @@ async def cookies_handler(client: Client, m: Message):
 async def start_command(bot: Client, message: Message):
     random_image_url = random.choice(image_urls)
     caption = (
-        "𝐇𝐞𝐥𝐥𝐨 𝐃𝐞𝐚𝐫 👋!\n\n➠ 𝐈 𝐚𝐦 𝐚 𝐓𝐞𝐱𝐭 𝙔𝘼𝘿𝘼𝙑 𝙅𝙄 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫 𝐁𝐨𝐭\n\n➠ Can Extract Videos & PDFs From Your Text File and Upload to Telegram!\n\n➠ For Guide Use Command /help 📖\n\n➠ 𝐌𝐚𝐝𝐞 𝐁𝐲 : 𝙎𝘼𝙄𝙉𝙄 𝘽𝙊𝙏𝙎 🦁"
+        "𝐇𝐞𝐥𝐥𝐨 𝐃𝐞𝐚𝐫 👋!\n\n➠ 𝐈 𝐚𝐦 𝐚 𝐓𝐞𝐱𝐭 𝙔𝘼𝘿𝘼𝙑 𝙅𝙄 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫 𝐁𝐨𝐭\n\n➠ Can Extract Videos & PDFs From Your Text File and Upload to Telegram!\n\n➠ For Guide Use Command /help 📖\n\n➠ 𝐌𝐚𝐝𝐞 𝐁𝐲 : 𝙔𝘼𝘿𝘼𝙑 𝙅𝙄 🦁"
     )
 
     await bot.send_photo(
@@ -461,12 +461,12 @@ async def txt_handler(bot: Client, m: Message):
                 cmd = f'yt-dlp -f "{ytf}" "{url}" -o "{name}.mp4"'
 
             try:  
-                cc = f'——— ✨ [{str(count).zfill(3)}]({link0}) ✨ ———\n\n🎞️𝐓𝐢𝐭𝐥𝐞 » `{name1}` **[{res}]**.mp4\n\n<pre><code>📚 Course : {b_name}</code></pre>\n\n🌟𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐞𝐝 𝐁𝐲 » `{CR}`\n'
-                cc1 = f'——— ✨ [{str(count).zfill(3)}]({link0}) ✨ ———\n\n📕𝐓𝐢𝐭𝐥𝐞 » `{name1}` .pdf\n\n<pre><code>📚 Course : {b_name}</code></pre>\n\n🌟𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐞𝐝 𝐁𝐲 » `{CR}`\n'
-                cczip = f'——— ✨ [{str(count).zfill(3)}]({link0}) ✨ ———\n\n📁𝐓𝐢𝐭𝐥𝐞 » `{name1}` .zip\n\n<pre><code>📚 Course : {b_name}</code></pre>\n\n🌟𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐞𝐝 𝐁𝐲 » `{CR}`\n'  
-                ccimg = f'——— ✨ [{str(count).zfill(3)}]({link0}) ✨ ———\n\n🖼️𝐓𝐢𝐭𝐥𝐞 » `{name1}` .jpg\n\n<pre><code>📚 Course : {b_name}</code></pre>\n\n🌟𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐞𝐝 𝐁𝐲 » `{CR}`\n'
-                cccpvod = f'——— ✨ [{str(count).zfill(3)}]({link0}) ✨ ———\n\n🎞️𝐓𝐢𝐭𝐥𝐞 » `{name1}` .mp4\n\n<a href="{urlcpvod}">__**Click Here to Watch Stream**__</a>\n🔗𝐋𝐢𝐧𝐤 » {link0}\n\n<pre><code>📚 Course : {b_name}</code></pre>\n\n🌟𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐞𝐝 𝐁𝐲 » `{CR}`\n'
-                ccyt = f'——— ✨ [{str(count).zfill(3)}]({link0}) ✨ ———\n\n🎞️𝐓𝐢𝐭𝐥𝐞 » `{name1}` .mp4\n\n<a href="{url}">__**Click Here to Watch Stream**__</a>\n\n<pre><code>📚 Course : {b_name}</code></pre>\n\n🌟𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐞𝐝 𝐁𝐲 » `{CR}`\n'
+                cc = 𝙛'➥◆━╾◇━━╾━━◆━ [{str(count).zfill(3)}]({link0}) ◆━╾◇━━╾━━◆━\n\n🎞️𝐓𝐢𝐭𝐥𝐞 ➥`{name1}` **[{res}]**.mp4\n\n<pre><code>🪄𝘽𝘼𝙏𝘾𝙃 𝙔𝘼𝘿𝘼𝙑 : {b_name}</code></pre>\n\𝙣◆━╾◇━━╾━━◆━𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐞𝐝 𝐁𝐲 ◆━╾◇━━╾━━◆━ `{CR}`\n'
+                cc1 = 𝙛'➥◆━╾◇━━╾━━◆━ [{str(count).zfill(3)}]({link0}) ◆━╾◇━━╾━━◆━\n\n📕𝐓𝐢𝐭𝐥𝐞 ➥ `{name1}` .pdf\n\n<pre><code>🪄𝘽𝘼𝙏𝘾𝙃 𝙔𝘼𝘿𝘼𝙑 : {b_name}</code></pre>\n\𝙣◆━╾◇━━╾━━◆━𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐞𝐝 𝐁𝐲 ◆━╾◇━━╾━━◆━ `{CR}`\n'
+                cczip = 𝙛'➥◆━╾◇━━╾━━◆━ [{str(count).zfill(3)}]({link0}) ◆━╾◇━━╾━━◆━\n\n📁𝐓𝐢𝐭𝐥𝐞 ➥ `{name1}` .zip\n\n<pre><code>🪄𝘽𝘼𝙏𝘾𝙃 𝙔𝘼𝘿𝘼𝙑 : {b_name}</code></pre>\n\𝙣◆━╾◇━━╾━━◆━𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐞𝐝 𝐁𝐲 ◆━╾◇━━╾━━◆━ `{CR}`\n'  
+                ccimg = 𝙛'➥◆━╾◇━━╾━━◆━ [{str(count).zfill(3)}]({link0}) ◆━╾◇━━╾━━◆━\n\n🖼️𝐓𝐢𝐭𝐥𝐞 ➥ `{name1}` .jpg\n\n<pre><code>🪄𝘽𝘼𝙏𝘾𝙃 𝙔𝘼𝘿𝘼𝙑 : {b_name}</code></pre>\n\𝙣◆━╾◇━━╾━━◆━𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐞𝐝 𝐁𝐲 ◆━╾◇━━╾━━◆━ `{CR}`\n'
+                cccpvod = 𝙛'➥◆━╾◇━━╾━━◆━ [{str(count).zfill(3)}]({link0}) ◆━╾◇━━╾━━◆━\n\n🎞️𝐓𝐢𝐭𝐥𝐞 ➥ `{name1}` .mp4\n\n<a href="{urlcpvod}">__**Click Here to Watch Stream**__</a>\n🔗𝐋𝐢𝐧𝐤 ◆━╾◇━━╾━━◆━ {link0}\n\n<pre><code>📚 Course : {b_name}</code></pre>\n\𝙣◆━╾◇━━╾━━◆━𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐞𝐝 𝐁𝐲 ◆━╾◇━━╾━━◆━ `{CR}`\n'
+                ccyt = 𝙛'➥◆━╾◇━━╾━━◆━ [{str(count).zfill(3)}]({link0}) ◆━╾◇━━╾━━◆━\n\n🎞️𝐓𝐢𝐭𝐥𝐞 ➥ `{name1}` .mp4\n\n<a href="{url}">__**Click Here to Watch Stream**__</a>\n\n<pre><code>📚 Course : {b_name}</code></pre>\n\𝙣◆━╾◇━━╾━━◆━𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐞𝐝 𝐁𝐲 ◆━╾◇━━╾━━◆━ `{CR}`\n'
                                  
                 if "drive" in url:
                     try:
@@ -602,7 +602,7 @@ async def txt_handler(bot: Client, m: Message):
 
             except Exception as e:
                 await m.reply_text(
-                    f'——— ✨ [{str(count).zfill(3)}]({link0}) ✨ ———\n\n📔𝐓𝐢𝐭𝐥𝐞 » `{name}`\n🔗𝐋𝐢𝐧𝐤 » <a href="{link0}">__**Click Here to check manually**__</a>\n\n✦𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ `𝙔𝙖𝙙𝙖𝙫 𝙟𝙞🐦`'
+                    𝙛'◆━╾◇━━╾━━◆━ [{str(count).zfill(3)}]({link0}) ◆━╾◇━━╾━━◆━\n\n📔𝐓𝐢𝐭𝐥𝐞 » `{name}`\n🔗𝐋𝐢𝐧𝐤 » <a href="{link0}">__**Click Here to check manually**__</a>\n\n✦𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ `𝙔𝙖𝙙𝙖𝙫 𝙟𝙞🐦`'
                 )
                 count += 1
                 failed_count += 1
@@ -709,7 +709,7 @@ async def text_handler(bot: Client, m: Message):
     editable = await m.reply_text(f"<pre><code>**🔹Processing your link...\n🔁Please wait...⏳**</code></pre>")
     await m.delete()
 
-    await editable.edit("<pre><code>╭━━━━❰ᴇɴᴛᴇʀ ʀᴇꜱᴏʟᴜᴛɪᴏɴ❱━━➣ </code></pre>\n┣━━⪼ send `144`  for 144p\n┣━━⪼ send `240`  for 240p\n┣━━⪼ send `360`  for 360p\n┣━━⪼ send `480`  for 480p\n┣━━⪼ send `720`  for 720p\n┣━━⪼ send `1080` for 1080p\n<pre><code>╰━━⌈⚡[`🦋🇸‌🇦‌🇮‌🇳‌🇮‌🦋`]⚡⌋━━➣ </code></pre>")
+    await editable.edit("<pre><code>╭━━━━❰ᴇɴᴛᴇʀ ʀᴇꜱᴏʟᴜᴛɪᴏɴ❱━━➣ </code></pre>\n┣━━⪼ send `144`  for 144p\n┣━━⪼ send `240`  for 240p\n┣━━⪼ send `360`  for 360p\n┣━━⪼ send `480`  for 480p\n┣━━⪼ send `720`  for 720p\n┣━━⪼ send `1080` for 1080p\n<pre><code>╰━━⌈⚡[`◆━╾◇━━𝙔𝘼𝘿𝘼𝙑 𝙅𝙄╾━━◆━`]⚡⌋━━➣ </code></pre>")
     input2: Message = await bot.listen(editable.chat.id, filters=filters.text & filters.user(m.from_user.id))
     raw_text2 = input2.text
     quality = f"{raw_text2}p"
@@ -815,10 +815,10 @@ async def text_handler(bot: Client, m: Message):
                 cmd = f'yt-dlp -f "{ytf}" "{url}" -o "{name}.mp4"'
 
             try:
-                cc = f'🎞️𝐓𝐢𝐭𝐥𝐞 » `{name}` [{res}].mp4\n🔗𝐋𝐢𝐧𝐤 » <a href="{link}">__**CLICK HERE**__</a>\n\n🌟𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐞𝐝 𝐁𝐲 » `𝙔𝘼𝘿𝘼𝙑 𝙅𝙄`'
-                cc1 = f'📕𝐓𝐢𝐭𝐥𝐞 » `{name}`\n🔗𝐋𝐢𝐧𝐤 » <a href="{link}">__**CLICK HERE**__</a>\n\n🌟𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐞𝐝 𝐁𝐲 » `𝙔𝘼𝘿𝘼𝙑 𝙅𝙄`'
-                ccyt = f'🎞️𝐓𝐢𝐭𝐥𝐞 » `{name}` .mp4\n🔗𝐋𝐢𝐧𝐤 » <a href="{link}">__**Click Here to Watch Stream**__</a>\n\n🌟𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐞𝐝 𝐁𝐲 » `𝙔𝘼𝘿𝘼𝙑 𝙅𝙄`'
-                cccpvod = f'🎞️𝐓𝐢𝐭𝐥𝐞 » `{name}` .mp4\n<a href="{linkcpvod}">__**Click Here to Watch Stream**__</a>\n🔗𝐋𝐢𝐧𝐤 » {link}\n🌟𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐞𝐝 𝐁𝐲 » `𝙔𝘼𝘿𝘼𝙑 𝙅𝙄`'
+                cc = f'🎞️𝐓𝐢𝐭𝐥𝐞 » `{name}` [{res}].mp4\n🔗𝐋𝐢𝐧𝐤 » <a href="{link}">__**CLICK HERE**__</a>\n\n🌟◆━╾◇━━╾━━◆━𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐞𝐝 𝐁𝐲 » `𝙔𝘼𝘿𝘼𝙑 𝙅𝙄`'
+                cc1 = f'📕𝐓𝐢𝐭𝐥𝐞 » `{name}`\n🔗𝐋𝐢𝐧𝐤 » <a href="{link}">__**CLICK HERE**__</a>\n\n🌟◆━╾◇━━╾━━◆━𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐞𝐝 𝐁𝐲 » `𝙔𝘼𝘿𝘼𝙑 𝙅𝙄`'
+                ccyt = f'🎞️𝐓𝐢𝐭𝐥𝐞 » `{name}` .mp4\n🔗𝐋𝐢𝐧𝐤 » <a href="{link}">__**Click Here to Watch Stream**__</a>\n\n🌟◆━╾◇━━╾━━◆━𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐞𝐝 𝐁𝐲 » `𝙔𝘼𝘿𝘼𝙑 𝙅𝙄`'
+                cccpvod = f'🎞️𝐓𝐢𝐭𝐥𝐞 » `{name}` .mp4\n<a href="{linkcpvod}">__**Click Here to Watch Stream**__</a>\n🔗𝐋𝐢𝐧𝐤 » {link}\n🌟◆━╾◇━━╾━━◆━𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐞𝐝 𝐁𝐲 » `𝙔𝘼𝘿𝘼𝙑 𝙅𝙄`'
                 
                 if "drive" in url:
                     try:
