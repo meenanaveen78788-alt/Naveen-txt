@@ -602,7 +602,7 @@ async def txt_handler(bot: Client, m: Message):
 
             except Exception as e:
                 await m.reply_text(
-                    𝙛'◆━╾◇━━╾━━◆━ [{str(count).zfill(3)}]({link0}) ◆━╾◇━━╾━━◆━\n\n📔𝐓𝐢𝐭𝐥𝐞 » `{name}`\n🔗𝐋𝐢𝐧𝐤 » <a href="{link0}">__**Click Here to check manually**__</a>\n\n✦𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ `𝙔𝙖𝙙𝙖𝙫 𝙟𝙞🐦`'
+                    f'◆━╾◇━━╾━━◆━ [{str(count).zfill(3)}]({link0}) ◆━╾◇━━╾━━◆━\n\n📔𝐓𝐢𝐭𝐥𝐞 » `{name}`\n🔗𝐋𝐢𝐧𝐤 » <a href="{link0}">__**Click Here to check manually**__</a>\n\n✦𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ `𝙔𝙖𝙙𝙖𝙫 𝙟𝙞🐦`'
                 )
                 count += 1
                 failed_count += 1
