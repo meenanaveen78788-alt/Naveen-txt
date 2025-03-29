@@ -146,8 +146,8 @@ async def txt_handler(client: Client, m: Message):
     await bot.send_message(m.chat.id, text= (
         "<pre><code> 🎉Congrats! You are using 𝙔𝘼𝘿𝘼𝙑 𝙅𝙄 :</code></pre>\n┣\n"
         "┣⪼01. Send /yadav - To Check Bot \n┣\n"
-        "┣⪼03. Send /cp - for stream txt file\n┣\n"
-        "┣⪼04. Send /y2t - YouTube to .txt Convert\n┣\n"
+        "┣⪼03. Send /cp1 - for stream txt file\n┣\n"
+        "┣⪼04. Send /y2t1 - YouTube to .txt Convert\n┣\n"
         "┣⪼05. Send /logs - To see Bot Working Logs\n┣\n"
         "┣⪼06. Send /cookies - To update YT cookies.\n┣\n"
         "┣⪼07. Send /stop - Stop the Running Task. 🚫\n┣\n"
@@ -338,7 +338,7 @@ async def txt_handler(bot: Client, m: Message):
     else:
         b_name = raw_text0
 
-    await editable.edit("╭━━━━❰ᴇɴᴛᴇʀ ʀᴇꜱᴏʟᴜᴛɪᴏɴ❱━━➣ \n┣━━⪼ send `144`  for 144p\n┣━━⪼ send `240`  for 240p\n┣━━⪼ send `360`  for 360p\n┣━━⪼ send `480`  for 480p\n┣━━⪼ send `720`  for 720p\n┣━━⪼ send `1080` for 1080p\n╰━━⌈⚡[`🦋🇸‌🇦‌🇮‌🇳‌🇮‌🦋`]⚡⌋━━➣")
+    await editable.edit("╭━━━━❰ᴇɴᴛᴇʀ ʀᴇꜱᴏʟᴜᴛɪᴏɴ❱━━➣ \n┣━━⪼ send `144`  for 144p\n┣━━⪼ send `240`  for 240p\n┣━━⪼ send `360`  for 360p\n┣━━⪼ send `480`  for 480p\n┣━━⪼ send `720`  for 720p\n┣━━⪼ send `1080` for 1080p\n╰━━⌈⚡[`🆈🅰🅳🅰🆅🅹➥🅹🅸`]⚡⌋━━➣")
     input2: Message = await bot.listen(editable.chat.id)
     raw_text2 = input2.text
     quality = f"{raw_text2}p"
@@ -461,10 +461,10 @@ async def txt_handler(bot: Client, m: Message):
                 cmd = f'yt-dlp -f "{ytf}" "{url}" -o "{name}.mp4"'
 
             try:  
-                cc = f'➥◆━╾◇━━╾━━◆━  [{str(count).zfill(3)}]({link0}) ◆━╾◇━━╾━━◆━\n\n🎞️𝐓𝐢𝐭𝐥𝐞 ➥`{name1}` **[{res}]**.mp4\n\n<pre><code>🪄𝘽𝘼𝙏𝘾𝙃 𝙔𝘼𝘿𝘼𝙑 : {b_name}</code></pre>\n\n◆━╾◇━━╾━━◆━𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐞𝐝 𝐁𝐲 ◆━╾◇━━╾━━◆━ `{CR}`\n'
-                cc1 = f'➥◆━╾◇━━╾━━◆━ [{str(count).zfill(3)}]({link0}) ◆━╾◇━━╾━━◆━\n\n📕𝐓𝐢𝐭𝐥𝐞 ➥ `{name1}` .pdf\n\n<pre><code>🪄𝘽𝘼𝙏𝘾𝙃 𝙔𝘼𝘿𝘼𝙑 : {b_name}</code></pre>\n\n◆━╾◇━━╾━━◆━𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐞𝐝 𝐁𝐲 ◆━╾◇━━╾━━◆━ `{CR}`\n'
-                cczip = f'➥◆━╾◇━━╾━━◆━ [{str(count).zfill(3)}]({link0}) ◆━╾◇━━╾━━◆━\n\n📁𝐓𝐢𝐭𝐥𝐞 ➥ `{name1}` .zip\n\n<pre><code>🪄𝘽𝘼𝙏𝘾𝙃 𝙔𝘼𝘿𝘼𝙑 : {b_name}</code></pre>\n\n◆━╾◇━━╾━━◆━𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐞𝐝 𝐁𝐲 ◆━╾◇━━╾━━◆━ `{CR}`\n'  
-                ccimg = f'➥◆━╾◇━━╾━━◆━ [{str(count).zfill(3)}]({link0}) ◆━╾◇━━╾━━◆━\n\n🖼️𝐓𝐢𝐭𝐥𝐞 ➥ `{name1}` .jpg\n\n<pre><code>🪄𝘽𝘼𝙏𝘾𝙃 𝙔𝘼𝘿𝘼𝙑 : {b_name}</code></pre>\n\n◆━╾◇━━╾━━◆━𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐞𝐝 𝐁𝐲 ◆━╾◇━━╾━━◆━ `{CR}`\n'
+                cc = f'➥◆━╾◇━━╾━━◆━  [{str(count).zfill(3)}]({link0}) ◆━╾◇━━╾━━◆━\n\n🎞️𝐓𝐢𝐭𝐥𝐞 ➥`{name1}` **[{res}]**.mp4\n\n<pre><code>🪄𝘽𝘼𝙏𝘾𝙃 𝙔𝘼𝘿𝘼𝙑 : {b_name}</code></pre>\n\n◆━╾◇━━╾━━◆━𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐞𝐝 𝐁𝐲◆━╾◇━━╾━━◆━ `{CR}`\n'
+                cc1 = f'➥◆━╾◇━━╾━━◆━ [{str(count).zfill(3)}]({link0}) ◆━╾◇━━╾━━◆━\n\n📕𝐓𝐢𝐭𝐥𝐞 ➥ `{name1}` .pdf\n\n<pre><code>🪄𝘽𝘼𝙏𝘾𝙃 𝙔𝘼𝘿𝘼𝙑 : {b_name}</code></pre>\n\n◆━╾◇━━╾━━◆━𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐞𝐝 𝐁𝐲◆━╾◇━━╾━━◆━ `{CR}`\n'
+                cczip = f'➥◆━╾◇━━╾━━◆━ [{str(count).zfill(3)}]({link0}) ◆━╾◇━━╾━━◆━\n\n📁𝐓𝐢𝐭𝐥𝐞 ➥ `{name1}` .zip\n\n<pre><code>🪄𝘽𝘼𝙏𝘾𝙃 𝙔𝘼𝘿𝘼𝙑 : {b_name}</code></pre>\n\n◆━╾◇━━╾━━◆━𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐞𝐝 𝐁𝐲◆━╾◇━━╾━━◆━ `{CR}`\n'  
+                ccimg = f'➥◆━╾◇━━╾━━◆━ [{str(count).zfill(3)}]({link0}) ◆━╾◇━━╾━━◆━\n\n🖼️𝐓𝐢𝐭𝐥𝐞 ➥ `{name1}` .jpg\n\n<pre><code>🪄𝘽𝘼𝙏𝘾𝙃 𝙔𝘼𝘿𝘼𝙑 : {b_name}</code></pre>\n\n◆━╾◇━━╾━━◆━𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐞𝐝 𝐁𝐲◆━╾◇━━╾━━◆━ `{CR}`\n'
                 cccpvod = f'➥◆━╾◇━━╾━━◆━ [{str(count).zfill(3)}]({link0}) ◆━╾◇━━╾━━◆━\n\n🎞️𝐓𝐢𝐭𝐥𝐞 ➥ `{name1}` .mp4\n\n<a href="{urlcpvod}">__**Click Here to Watch Stream**__</a>\n🔗𝐋𝐢𝐧𝐤 ◆━╾◇━━╾━━◆━ {link0}\n\n<pre><code>📚 Course : {b_name}</code></pre>\n\𝙣◆━╾◇━━╾━━◆━𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐞𝐝 𝐁𝐲 ◆━╾◇━━╾━━◆━ `{CR}`\n'
                 ccyt = f'➥◆━╾◇━━╾━━◆━ [{str(count).zfill(3)}]({link0}) ◆━╾◇━━╾━━◆━\n\n🎞️𝐓𝐢𝐭𝐥𝐞 ➥ `{name1}` .mp4\n\n<a href="{url}">__**Click Here to Watch Stream**__</a>\n\n<pre><code>📚 Course : {b_name}</code></pre>\n\n◆━╾◇━━╾━━◆━𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐞𝐝 𝐁𝐲 ◆━╾◇━━╾━━◆━ `{CR}`\n'
                                  
@@ -674,7 +674,7 @@ async def txt_handler(bot: Client, m: Message):
                 
                 else:
                     emoji_message = await show_random_emojis(message)
-                    Show = f"<pre><code>**⚡Dᴏᴡɴʟᴏᴀᴅ Sᴛᴀʀᴛᴇᴅ...⏳**</code></pre>\n🔗𝐋𝐢𝐧𝐤 » `{link}`\n<pre><code>✦𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ `🇸‌🇦‌🇮‌🇳‌🇮‌🐦`</code></pre>"
+                    Show = f"<pre><code>**⚡Dᴏᴡɴʟᴏᴀᴅ Sᴛᴀʀᴛᴇᴅ...⏳**</code></pre>\n🔗𝐋𝐢𝐧𝐤 » `{link}`\n<pre><code>✦𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ 🆈🅰🅳🅰🆅➥🅹🅸🐦`</code></pre>"
                     prog = await m.reply_text(Show, disable_web_page_preview=True)
                     res_file = await helper.download_video(url, cmd, name)
                     filename = res_file
