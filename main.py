@@ -144,8 +144,8 @@ cookies_file_path= "youtube_cookies.txt"
 @bot.on_message(filters.command(["help"]))
 async def txt_handler(client: Client, m: Message):
     await bot.send_message(m.chat.id, text= (
-        "<pre><code> 🎉Congrats! You are using 𝙔𝘼𝘿𝘼𝙑 𝙅𝙄:</code></pre>\n┣start       "┣⪼01. Send /started - To Check Bot \n┣\n"
-        "┣⪼02. Send /yadav - for extract txt file\n┣\n"
+        "<pre><code> 🎉Congrats! You are using 𝙔𝘼𝘿𝘼𝙑 𝙅𝙄 :</code></pre>\n┣\n"
+        "┣⪼01. Send /yadav - To Check Bot \n┣\n"
         "┣⪼03. Send /cp - for stream txt file\n┣\n"
         "┣⪼04. Send /y2t - YouTube to .txt Convert\n┣\n"
         "┣⪼05. Send /logs - To see Bot Working Logs\n┣\n"
