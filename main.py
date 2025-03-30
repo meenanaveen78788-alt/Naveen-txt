@@ -141,7 +141,7 @@ image_urls = [
 
 cookies_file_path= "youtube_cookies.txt"
 
-@bot.on_message(filters.command(["help"]))
+@bot.on_message(filters.command(["yadav"]))
 async def txt_handler(client: Client, m: Message):
     await bot.send_message(m.chat.id, text= (
         "<pre><code> 🎉Congrats! You are using 𝙔𝘼𝘿𝘼𝙑 𝙅𝙄 :</code></pre>\n┣\n"
@@ -192,7 +192,7 @@ async def cookies_handler(client: Client, m: Message):
         await m.reply_text(f"⚠️ An error occurred: {str(e)}")
         
 # Start command handler
-@bot.on_message(filters.command(["start"]))
+@bot.on_message(filters.command(["yadav"]))
 async def start_command(bot: Client, message: Message):
     random_image_url = random.choice(image_urls)
     caption = (
@@ -218,7 +218,7 @@ async def send_logs(bot: Client, m: Message):
 
 @bot.on_message(filters.command(["stop"]) )
 async def restart_handler(_, m):
-    await m.reply_text("ˢᵗᵒᵖᵖᵉᵈ ᵇᵃᵇʸ", True)
+    await m.reply_text("🫰 𝗦𝗧𝗢𝗣𝗘𝗗 🫰", True)
     os.execl(sys.executable, sys.executable, *sys.argv)
 
 @bot.on_message(filters.command(["y2t"]))
@@ -300,7 +300,7 @@ async def youtube_to_txt(client, message: Message):
     # Remove the temporary text file after sending
     os.remove(txt_file)
 
-@bot.on_message(filters.command(["drm"]) )
+@bot.on_message(filters.command(["yadavji"]) )
 async def txt_handler(bot: Client, m: Message):
     editable = await m.reply_text(f"<pre><code>🔹Hi I am Poweful TXT Downloader📥 Bot.\n🔹Send me the TXT file and wait.</code></pre>")
     input: Message = await bot.listen(editable.chat.id)
@@ -338,7 +338,7 @@ async def txt_handler(bot: Client, m: Message):
     else:
         b_name = raw_text0
 
-    await editable.edit("╭━━━━❰ᴇɴᴛᴇʀ ʀᴇꜱᴏʟᴜᴛɪᴏɴ❱━━➣ \n┣━━⪼ send `144`  for 144p\n┣━━⪼ send `240`  for 240p\n┣━━⪼ send `360`  for 360p\n┣━━⪼ send `480`  for 480p\n┣━━⪼ send `720`  for 720p\n┣━━⪼ send `1080` for 1080p\n╰━━⌈⚡[`🆈🅰🅳🅰🆅🅹➥🅹🅸`]⚡⌋━━➣")
+    await editable.edit("╭━━━━❰ᴇɴᴛᴇʀ ʀᴇꜱᴏʟᴜᴛɪᴏɴ❱━━➣ \n┣━━⪼ send `144`  for 144p\n┣━━⪼ send `240`  for 240p\n┣━━⪼ send `360`  for 360p\n┣━━⪼ send `480`  for 480p\n┣━━⪼ send `720`  for 720p\n┣━━⪼ send `1080` for 1080p\n\n╰━━⌈⚡[`🆈🅰🅳🅰🆅🅹➥🅹🅸`]⚡⌋━━➣")
     input2: Message = await bot.listen(editable.chat.id)
     raw_text2 = input2.text
     quality = f"{raw_text2}p"
@@ -398,7 +398,7 @@ async def txt_handler(bot: Client, m: Message):
         thumb = raw_text6
 
     await m.reply_text(
-        f"<pre><code>🎯Target Batch : {b_name}</code></pre>"
+        f"🎯𝗕𝗮𝘁𝗰𝗛 𝗡𝗮𝗺𝗘 - {b_name} "
     )
 
     failed_count = 0
@@ -461,10 +461,10 @@ async def txt_handler(bot: Client, m: Message):
                 cmd = f'yt-dlp -f "{ytf}" "{url}" -o "{name}.mp4"'
 
             try:  
-                cc = f'➥◆━╾━╾━ᐯɪᴅɪ𝗢 𝗜ᗪ ➫ [{str(count).zfill(3)}]({link0})◇━━╾━━\n\n📃𝐓ɪᴛʟ𝐄 ➠`{name1}` \n\n 🎬Ҩᴜᴀʟɪᴛㄚ ✎ **[{res}]**𝐘ᴀᴅᴀᴠ 𝐉𝐈.mp4\n\n ❖ 𝗕𝗮𝘁𝗰𝗛✑ {b_name}\n\n ✰╾────╼──╼───╼───╼──✰\n 🧿 ☏ 𝔇ᴏᴡɴʟᴏᴀ𝔇 ᗷY  ♤  `{CR}`\n✰╾────╼──╼───╼───╼──✰\n'
-                cc1 = f'➥◆━╾━╾━ᐯɪᴅɪ𝗢 𝗜ᗪ ➫ [{str(count).zfill(3)}]({link0})◇━━╾━━\n\n📃𝐓ɪᴛʟ𝐄 ➠`{name1}` \n\n 🎬Ҩᴜᴀʟɪᴛㄚ ✎ **[{res}]**𝐘ᴀᴅᴀᴠ 𝐉𝐈.mp4\n\n ❖ 𝗕𝗮𝘁𝗰𝗛✑ {b_name}\n\n ✰╾────╼──╼───╼───╼──✰\n 🧿 ☏ 𝔇ᴏᴡɴʟᴏᴀ𝔇 ᗷY  ♤  `{CR}`\n✰╾────╼──╼───╼───╼──✰\n'
-                cczip = f'➥◆━╾━╾━ᐯɪᴅɪ𝗢 𝗜ᗪ ➫ [{str(count).zfill(3)}]({link0})◇━━╾━━\n\n📃𝐓ɪᴛʟ𝐄 ➠`{name1}` \n\n 🎬Ҩᴜᴀʟɪᴛㄚ ✎ **[{res}]**𝐘ᴀᴅᴀᴠ 𝐉𝐈.mp4\n\n ❖ 𝗕𝗮𝘁𝗰𝗛✑ {b_name}\n\n ✰╾────╼──╼───╼───╼──✰\n 🧿 ☏ 𝔇ᴏᴡɴʟᴏᴀ𝔇 ᗷY  ♤  `{CR}`\n✰╾────╼──╼───╼───╼──✰\n'
-                ccimg = f'➥◆━╾━╾━ᐯɪᴅɪ𝗢 𝗜ᗪ ➫ [{str(count).zfill(3)}]({link0})◇━━╾━━\n\n📃𝐓ɪᴛʟ𝐄 ➠`{name1}` \n\n 🎬Ҩᴜᴀʟɪᴛㄚ ✎ **[{res}]**𝐘ᴀᴅᴀᴠ 𝐉𝐈.mp4\n\n ❖ 𝗕𝗮𝘁𝗰𝗛✑ {b_name}\n\n ✰╾────╼──╼───╼───╼──✰\n 🧿 ☏ 𝔇ᴏᴡɴʟᴏᴀ𝔇 ᗷY  ♤  `{CR}`\n✰╾────╼──╼───╼───╼──✰\n'
+                cc = f'➥◆━╾━╾━ᐯɪᴅɪ𝗢 𝗜ᗪ ➫ [{str(count).zfill(3)}]({link0})◇━━╾━━\n\n📃𝐓ɪᴛʟ𝐄 ➠ {name1} \n\n 🎬Ҩᴜᴀʟɪᴛㄚ ✎ **[{res}]**𝐘ᴀᴅᴀᴠ 𝐉𝐈.mp4\n\n ❖ 𝗕𝗮𝘁𝗰𝗛✑ {b_name}\n\n ✰╾────╼──╼───╼───╼──✰\n 🧿 ☏ 𝔇ᴏᴡɴʟᴏᴀ𝔇 ᗷY  ♤   {CR} \n✰╾────╼──╼───╼───╼──✰\n'
+                cc1 = f'➥◆━╾━╾━ᐯɪᴅɪ𝗢 𝗜ᗪ ➫ [{str(count).zfill(3)}]({link0})◇━━╾━━\n\n📃𝐓ɪᴛʟ𝐄 ➠ {name1} \n\n 🎬Ҩᴜᴀʟɪᴛㄚ ✎ **[{res}]**𝐘ᴀᴅᴀᴠ 𝐉𝐈.mp4\n\n ❖ 𝗕𝗮𝘁𝗰𝗛✑ {b_name}\n\n ✰╾────╼──╼───╼───╼──✰\n 🧿 ☏ 𝔇ᴏᴡɴʟᴏᴀ𝔇 ᗷY  ♤   {CR} \n✰╾────╼──╼───╼───╼──✰\n'
+                cczip = f'➥◆━╾━╾━ᐯɪᴅɪ𝗢 𝗜ᗪ ➫ [{str(count).zfill(3)}]({link0})◇━━╾━━\n\n📃𝐓ɪᴛʟ𝐄 ➠ {name1}  \n\n 🎬Ҩᴜᴀʟɪᴛㄚ ✎ **[{res}]**𝐘ᴀᴅᴀᴠ 𝐉𝐈.mp4\n\n ❖ 𝗕𝗮𝘁𝗰𝗛✑ {b_name}\n\n ✰╾────╼──╼───╼───╼──✰\n 🧿 ☏ 𝔇ᴏᴡɴʟᴏᴀ𝔇 ᗷY  ♤   {CR} \n✰╾────╼──╼───╼───╼──✰\n'
+                ccimg = f'➥◆━╾━╾━ᐯɪᴅɪ𝗢 𝗜ᗪ ➫ [{str(count).zfill(3)}]({link0})◇━━╾━━\n\n📃𝐓ɪᴛʟ𝐄 ➠ {name1}  \n\n 🎬Ҩᴜᴀʟɪᴛㄚ ✎ **[{res}]**𝐘ᴀᴅᴀᴠ 𝐉𝐈.mp4\n\n ❖ 𝗕𝗮𝘁𝗰𝗛✑ {b_name}\n\n ✰╾────╼──╼───╼───╼──✰\n 🧿 ☏ 𝔇ᴏᴡɴʟᴏᴀ𝔇 ᗷY  ♤   {CR} \n✰╾────╼──╼───╼───╼──✰\n'
                 cccpvod = f'➥◆━╾◇━━╾━━◆━ [{str(count).zfill(3)}]({link0}) ◆━╾◇━━╾━━◆━\n\n🎞️𝐓𝐢𝐭𝐥𝐞 ➥ `{name1}` .mp4\n\n<a href="{urlcpvod}">__**Click Here to Watch Stream**__</a>\n🔗𝐋𝐢𝐧𝐤 ◆━╾◇━━╾━━◆━ {link0}\n\n<pre><code>📚 Course : {b_name}</code></pre>\n\𝙣◆━╾◇━━╾━━◆━𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐞𝐝 𝐁𝐲 ◆━╾◇━━╾━━◆━ `{CR}`\n'
                 ccyt = f'➥◆━╾◇━━╾━━◆━ [{str(count).zfill(3)}]({link0}) ◆━╾◇━━╾━━◆━\n\n🎞️𝐓𝐢𝐭𝐥𝐞 ➥ `{name1}` .mp4\n\n<a href="{url}">__**Click Here to Watch Stream**__</a>\n\n<pre><code>📚 Course : {b_name}</code></pre>\n\n◆━╾◇━━╾━━◆━𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐞𝐝 𝐁𝐲 ◆━╾◇━━╾━━◆━ `{CR}`\n'
                                  
@@ -582,15 +582,15 @@ async def txt_handler(bot: Client, m: Message):
                     remaining_links = len(links) - count
                     progress = (count / len(links)) * 100
                     emoji_message = await show_random_emojis(message)
-                    Show = f"🚀𝐏𝐑𝐎𝐆𝐑𝐄𝐒𝐒 » {progress:.2f}%\n┃\n" \
-                           f"┣🔗𝐈𝐧𝐝𝐞𝐱 » {str(count)}/{len(links)}\n┃\n" \
-                           f"╰━🖇️𝐑𝐞𝐦𝐚𝐢𝐧𝐢𝐧𝐠 𝐋𝐢𝐧𝐤𝐬 » {remaining_links}\n\n" \
+                    Show = f"🚀 𝗣𝗿𝗼𝗴𝗿𝗲𝗦𝗦 𝗬𝗮𝗱𝗮𝘃 𝗨𝗽𝗹𝗼𝗮𝗱𝗲𝗿 ✰ {progress:.2f}%\n┃\n" \
+                           f"┣🔗𝗜𝗡𝗗𝗘𝗫 ✰ {str(count)}/{len(links)}\n┃\n" \
+                           f"╰━🖇️𝗥𝗘𝗠𝗔𝗜𝗡𝗜𝗡𝗚 𝗟𝗜𝗡𝗞 ✵  {remaining_links}\n\n" \
                            f"**⚡Dᴏᴡɴʟᴏᴀᴅ Sᴛᴀʀᴛᴇᴅ...⏳**\n\n" \
-                           f"📚𝐓𝐢𝐭𝐥𝐞 » `{name}`\n┃\n" \
-                           f"┣🍁𝐐𝐮𝐚𝐥𝐢𝐭𝐲 » {raw_text2}p\n┃\n" \
-                           f'┣━🔗𝐋𝐢𝐧𝐤 » <a href="{link0}">__**Click Here to Open Link**__</a>\n┃\n' \
-                           f'╰━━🖼️𝐓𝐡𝐮𝐦𝐛𝐧𝐚𝐢𝐥 » <a href="{raw_text6}">__**Thumb Link**__</a>\n\n' \
-                           f"✦𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ `𝙔𝘼𝘿𝘼𝙑 𝙅𝙄 🐦`"
+                           f"📚𝗧𝗶𝘁𝗹𝗲 » `{name}`\n┃\n" \
+                           f"┣🍁𝗤𝘂𝗮𝗹𝗶𝘁𝗬 » {raw_text2}p\n┃\n" \
+                           f'┣━🔗𝗟𝗶𝗻𝗞 » <a href="{link0}">__**Click Here to Open Link**__</a>\n┃\n' \
+                           f'╰━━🖼️𝗧𝗵𝘂𝗺𝗯𝗡𝗮𝗶𝗹 » <a href="{raw_text6}">__**Thumb Link**__</a>\n\n' \
+                           f"✦ 𝗕𝗢𝗧 𝗔𝗗𝗠𝗜𝗡 ✦ (@Yadav_ji_admin)"
                     prog = await m.reply_text(Show, disable_web_page_preview=True)
                     res_file = await helper.download_video(url, cmd, name)
                     filename = res_file
@@ -610,8 +610,8 @@ async def txt_handler(bot: Client, m: Message):
 
     except Exception as e:
         await m.reply_text(e)
-    await m.reply_text("<pre><code>⌈✨Total Failed link『{failed_count}』✨⌋</code></pre>")
-    await m.reply_text("<pre><code>Downloaded By ⌈✨『𝙔𝘼𝘿𝘼𝙑 𝙅𝙄』✨⌋</code></pre>")
+    await m.reply_text("⌈🐼𝗧𝗼𝘁𝗮𝗟 𝗙𝗮𝗶𝗹𝗗 𝗟𝗶𝗻𝗸𝗦『{failed_count}』💨⌋")
+    await m.reply_text("🦅𝗔𝗹𝗹 𝗟𝗲𝗰𝘁𝘂𝗿𝗲𝗦 𝗨𝗽𝗹𝗼𝗮𝗱𝗲𝗱 𝘀𝘂𝗰𝗰𝗲𝘀𝘀𝗳𝘂𝗹𝗹𝗬 ⌈🧸『✰(@𝗬𝗮𝗱𝗮𝘃_𝗷𝗶_𝗮𝗱𝗺𝗶𝗻)』🏆⌋")
 
 @bot.on_message(filters.command(["cp"]) )
 async def txt_handler(bot: Client, m: Message):
