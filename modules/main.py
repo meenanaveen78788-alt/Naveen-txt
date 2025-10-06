@@ -110,7 +110,7 @@ async def id_command(client, message: Message):
     else:
         await message.reply_text(text, reply_markup=keyboard)
 
-# .....,.....,.......,...,.......,....., .....,.....,.......,...,.......,.....,
+# ......,.....,.......,...,.......,....., .....,.....,.......,...,.......,.....,
 
 @bot.on_message(filters.private & filters.command(["info"]))
 async def info(bot: Client, update: Message):
