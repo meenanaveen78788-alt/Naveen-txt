@@ -307,7 +307,7 @@ async def txt_handler(bot: Client, m: Message):
     x = await input.download()
     await input.delete(True)
     file_name, ext = os.path.splitext(os.path.basename(x))
-    credit = f"𝙔𝘼𝘿𝘼𝙑 𝙅𝙄🪄"
+    credit = f"naveen 𝙅𝙄🪄"
     try:    
         with open(x, "r") as f:
             content = f.read()
