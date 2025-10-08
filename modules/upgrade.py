@@ -2,7 +2,7 @@ import os
 from vars import CREDIT, OWNER
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, InputMediaPhoto, Message
-# .....,.....,.......,...,.......,....., .....,.....,.......,...,.......,.....,
+# .....,......,.......,...,.......,....., .....,.....,.......,...,.......,.....,
 
 # upgrade button
 def register_upgrade_handlers(bot):
