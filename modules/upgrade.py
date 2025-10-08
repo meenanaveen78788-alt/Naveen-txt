@@ -15,7 +15,7 @@ def register_upgrade_handlers(bot):
                f" 🎉 Welcome [{first_name}](tg://user?id={user_id}) to DRM Bot! 🎉\n\n"
                f"You can have access to download all Non-DRM+AES Encrypted URLs 🔐 including\n\n"
                f"<blockquote>• 📚 Appx Zip+Encrypted Url\n"
-               f"• 🎓 Classplus DRM+ NDRM\n"
+               f"• 🎓 classplus DRM+ NDRM\n"
                f"• 🧑‍🏫 PhysicsWallah DRM\n"
                f"• 📚 CareerWill + PDF\n"
                f"• 🎓 Khan GS\n"
